@@ -22,6 +22,9 @@
         <!-- Web Fonts  -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
         @include('layouts.css')
 
         <!-- Head Libs -->

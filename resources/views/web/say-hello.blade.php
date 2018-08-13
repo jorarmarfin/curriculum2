@@ -16,9 +16,14 @@
                                 <div class="form-control-custom">
                                     <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="mensaje" placeholder="Mensaje*" id="message" required="" aria-required="true"></textarea>
                                 </div>
+                                <div class="form-control-custom">
+                                    <div class="g-recaptcha" data-sitekey="6Le7xWkUAAAAAJWvWj017_rvNCOVnHiR1xJPyLyZ"></div>
+                                    <br/>
+                                </div>
                                 <input type="submit" class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" value="Enviar" />
                             </div>
                         {!! Form::close() !!}
+
                     </div>
                 </div>
             </section>
