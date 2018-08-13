@@ -12,12 +12,12 @@
                     <span class="custom-text-color-1 text-uppercase mb-3">{!! $datos->segundo_slogan !!}</span>
                     <span class="custom-text-color-1 text-uppercase">
                         <strong class="text-color-light">Anterior: </strong>
-                        Front-End Developer at Porto
+                        {{ $ultima_experiencia->nombre_corto.' - '.$ultima_experiencia->cargo }}
                         <a data-hash href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1 ml-2">Ver más</a>
                     </span>
                     <span class="custom-text-color-1 text-uppercase">
                         <strong class="text-color-light">Educación: </strong>
-                        Porto School
+                        {{ $ultima_educacion->curso }}
                         <a data-hash href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1 ml-2">Ver más</a>
                     </span>
                 </span>
