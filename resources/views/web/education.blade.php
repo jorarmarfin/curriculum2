@@ -13,8 +13,10 @@
                                 data-toggle="modal"
                                 data-target="#EducacionDetalle"
                                 data-institucion="{{ $item->institucion }}"
-                                data-descripcion="{{ $item->descripcion }}"
+                                data-descripcion="{!! $item->descripcion !!}"
                                 data-curso="{{ $item->curso }}"
+                                data-horas="{{ $item->horas }}"
+                                data-nivel="{{ $item->nivel }}"
 
                                 >
                                 <i class="icon-graduation icons text-color-primary"></i>
@@ -33,6 +35,9 @@
         </div>
     </div>
 </section>
+
+
+
 <!-- Modal -->
 <div class="modal fade" id="EducacionDetalle" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -48,6 +53,8 @@
                 </div><!--row-->
                 <h4>Detalles</h4>
                 <div id="m_descripcion"></div>
+                <h4>Horas: <span id="m_horas"></span></h4>
+                <h4>Nivel: <span id="m_nivel"></span></h4>
                 <h4>Referencia</h4>
                 <div id="m_referencia"></div>
             </div>
