@@ -10,7 +10,9 @@
                             @if ($loop->index%2==0)
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>
-                                    <i class="fab fa-{{ str_slug($item->habilidad) }}"></i>
+                                	@if ($item->icono!='no')
+                                    <i class="{{ $item->icono }}"></i>
+                                	@endif
                                     {{ $item->habilidad }}
                                 </span>
                             </div>
@@ -28,7 +30,9 @@
                             @if ($loop->index%2!=0)
                             <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
                                 <span>
-                                    <i class="fab fa-{{ str_slug($item->habilidad) }}"></i>
+                                    @if ($item->icono!='no')
+                                    <i class="{{ $item->icono }}"></i>
+                                	@endif
                                     {{ $item->habilidad }}
                                 </span>
                             </div>
